@@ -21,12 +21,12 @@ public class Main {
         t3.addGrade("MKT-330", 3.2);
         t3.addGrade("LDRSHP-100", 2.8);
 
-        System.out.print(t1.getStudentName() + ": ");
+        System.out.println(t1.getStudentName() + ": ");
         t1.printTranscript();
 
         System.out.println(t1.getGPA());
 
-        System.out.print(t3.getStudentName());
+        System.out.println(t3.getStudentName());
 
     }
 }
