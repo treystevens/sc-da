@@ -8,25 +8,24 @@ public class Transaction {
     private TransactionType type;
 
     public Transaction(String name, String date, int amount, TransactionType type) {
-       // TODO: complete the implementation of this method
+        this.name = name;
+        this.date = date;
+        this.amount = amount;
+        this.type = type;
     }
 
     // getters
     public String getName() {
-        // TODO: complete the implementation of this method
-        return null;
+        return name;
     }
     public String getDate() {
-        // TODO: complete the implementation of this method
-        return null;
+        return date;
     }
     public int getAmount() {
-        // TODO: complete the implementation of this method
-        return 0;
+        return amount;
     }
     public TransactionType getType() {
-        // TODO: complete the implementation of this method
-        return null;
+        return this.type;
     }
 
 
