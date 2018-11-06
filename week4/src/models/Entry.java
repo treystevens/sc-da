@@ -5,7 +5,7 @@ public abstract class Entry {
     private Date date;
     private Time time;
     private String label;
-    private Integer intervalOfRepetition;
+    private int intervalOfRepetition;
 
     public Entry(Date date, Time time, String label){
         this.date = date;
@@ -26,19 +26,19 @@ public abstract class Entry {
         return label;
     }
 
-    public Boolean isRepeating(){
+    public boolean isRepeating(){
         return intervalOfRepetition != 0;
     }
 
     //EFFECTS: returns interval of repetition, or 0 if none
-    public Integer getIntervalOfRepetition(){
+    public int getIntervalOfRepetition(){
         return intervalOfRepetition;
     }
 
     // REQUIRES: Interval > 0
     // MODIFIES: This
     // EFFECTS: interval of repetition in days, or 0 if not repeating
-    public void setIntervalOfRepetition(Integer interval){
+    public void setIntervalOfRepetition(int interval){
         intervalOfRepetition = interval;
     }
 

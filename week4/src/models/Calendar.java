@@ -21,6 +21,7 @@ public class Calendar {
         return currentDate;
     }
     public String getEmail(){
+        System.out.println(email);
         return email;
     }
     public ArrayList<Entry> getEntries(){
@@ -34,6 +35,7 @@ public class Calendar {
     // EFFECTS: sets the email to given email
     public void setEmail(String email){
         this.email = email;
+        System.out.println(email);
     }
 
     // REQUIRES: e != null
@@ -47,5 +49,16 @@ public class Calendar {
     // EFFECTS: removes entry from calendar
     public void removeEntry(Entry e){
         entries.remove(e);
+    }
+
+
+    // EFFECTS: prints out all the entries , date : label
+    public void printEntries(){
+
+        for(Entry e : entries){
+            System.out.println("Date: " + e.getDate().getDateLongFormat());
+            System.out.println("Label: " + e.getLabel());
+        }
+
     }
 }

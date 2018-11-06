@@ -2,12 +2,12 @@ package models;
 
 public class Date {
 
-    private Integer day;
-    private Integer month;
-    private Integer year;
+    private int day;
+    private int month;
+    private int year;
 
 
-    public Date(Integer month, Integer day, Integer year){
+    public Date(int month, int day, int year){
         this.month = month;
         this.day = day;
         this.year = year;
@@ -15,23 +15,20 @@ public class Date {
 
 
     // GETTERS
-    public Integer getDay(){
-        System.out.println(this.day);
-        return this.day;
+    public int getDay(){
+        return day;
     }
 
-    public Integer getMonth(){
-        System.out.println(this.month);
-        return this.month;
+    public int getMonth(){
+        return month;
     }
 
-    public Integer getYear(){
-        System.out.println(this.year);
-        return this.year;
+    public int getYear(){
+        return year;
     }
 
     public String getDateShortFormat(){
-        String dateConcat = this.month + "/" + this.day + "/" + this.year;
+        String dateConcat = month + "/" + day + "/" + year;
 
         System.out.println(dateConcat);
         return dateConcat;
@@ -70,7 +67,7 @@ public class Date {
                 break;
         }
 
-        dateConcat = monthString + " "+ this.day + ", " + this.year;
+        dateConcat = monthString + " "+ day + ", " + year;
 
         System.out.println(dateConcat);
         return dateConcat;

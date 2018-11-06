@@ -2,10 +2,10 @@ package models;
 
 public class Time {
 
-    Integer hour;
-    Integer minute;
+    private int hour;
+    private int minute;
 
-    public Time(Integer hour, Integer minute){
+    public Time(int hour, int minute){
         this.hour = hour;
         this.minute = minute;
     }

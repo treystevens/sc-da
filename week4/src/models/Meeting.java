@@ -22,14 +22,14 @@ public class Meeting extends Event{
     // REQUIRES: attendee != null
     // MODIFIES: This
     // EFFECTS: Adds an attendee to list of invited people
-    public void addAttendees(String attendee){
+    public void addAttendee(String attendee){
         attendees.add(attendee);
     }
 
     // REQUIRES: attendee != null
     // MODIFIES: This
     // EFFECTS: Removes an attendee from the list of invited people
-    public void removeAttendees(String attendee){
+    public void removeAttendee(String attendee){
         attendees.remove(attendee);
     }
 
