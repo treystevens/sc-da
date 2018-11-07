@@ -30,10 +30,5 @@ public class Main {
 
         cal1.printEntries();
 
-
-
-
-
-
     }
 }
