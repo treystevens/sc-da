@@ -1,6 +1,7 @@
 package model;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Zookeeper {
@@ -13,6 +14,9 @@ public class Zookeeper {
     public Zookeeper(String name, int age){
         this.name = name;
         this.age = age;
+
+        animalList = new ArrayList<>();
+        favourite = null;
     }
 
 
