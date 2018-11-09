@@ -40,9 +40,4 @@ public class CellPhoneTest {
         assertTrue(cellphone.getCalls().contains(newCall));
     }
 
-
-
-    
-
-
 }
