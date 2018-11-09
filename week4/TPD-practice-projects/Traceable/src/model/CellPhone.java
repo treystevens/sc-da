@@ -36,6 +36,10 @@ public class CellPhone implements Traceable{
         System.out.println("Tracking the cell phone from " + owner.getName() + "...");
     }
 
+    public Person getOwner(){
+        return owner;
+    }
+
     public ArrayList<Call> getCalls(){
         return calls;
     }
