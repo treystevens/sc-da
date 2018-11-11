@@ -1,0 +1,3 @@
+[submodule "final_project/SimpleDrawingPlayer-starter"]
+	path = final_project/SimpleDrawingPlayer-starter
+	url = https://github.com/UBCx-Software-Construction/SimpleDrawingPlayer-starter.git
